@@ -1,0 +1,364 @@
+// Desktop first
+// @media (max-width: 600px) {
+
+// }
+
+// Mobile first
+@media (min-width: 600px) {
+	:root {
+		--container-width: 600px;
+		--container-padding: 20px;
+	}
+	.title-rus {
+		font-size: 56px;
+	}
+	.header {
+		&__slide {
+			min-height: 683px;
+		}
+		&__slider-text-block {
+			margin-top: 248px;
+		}
+		&__slider-text-top {
+			font-size: 36px;
+		}
+		&__slider-text-main {
+			margin: 0 auto;
+			max-width: 500px;
+			font-size: 60px;
+		}
+		&__slider-text-chi {
+			font-size: 40px;
+		}
+		&__top {
+			padding: 20px;
+		}
+		&__phone {
+			position: absolute;
+			color: var(--color-text-light);
+			left: calc(50% - 92px);
+			top: 162px;
+			font-size: 20px;
+			column-gap: 12px;
+			display: flex;
+			align-items: center;
+		}
+		&__user-tools {
+			height: 51px;
+			width: 51px;
+		}
+		&__user-cab-link {
+			margin-right: 12px;
+		}
+		&__cart-items-qauntity {
+			width: 22px;
+			height: 22px;
+			top: -4px;
+			right: -9px;
+			font-size: 16px;
+		}
+		&__booking-block {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			column-gap: 21px;
+			position: absolute;
+			top: 496px;
+			left: calc(50% - 280px);
+		}
+		&__booking-link {
+			width: 270px;
+			height: 76px;
+			border-radius: 9px;
+		}
+		&__booking-text-rus {
+			font-size: 16px;
+			margin: 19px 12px;
+		}
+
+		&__booking-separator {
+			height: 63px;
+		}
+		&__booking-text-chi {
+			font-size: 20px;
+			padding: 15px;
+			min-width: 110px;
+		}
+	}
+	.slick-dots {
+		bottom: 23px;
+		& li {
+			margin: 0 4px;
+			width: 8px;
+			height: 8px;
+			border-radius: 5px;
+			&.slick-active {
+				width: 45px;
+			}
+		}
+	}
+	.delivery {
+		&__link {
+			& > .header__booking-text-rus {
+				max-width: 135px;
+			}
+		}
+	}
+	.menu {
+		display: none;
+	}
+	.logo {
+		width: 122px;
+		height: 122px;
+		position: absolute;
+		top: 20px;
+		left: calc(50% - 61px);
+	}
+	.svg-header--user-dims {
+		width: 20px;
+	}
+	.svg-main--menu--cart-dims {
+		width: 25px;
+	}
+	.svg-header--phone-dims {
+		width: 17px;
+		height: 17px;
+	}
+	// Features========================================================================
+	.features {
+		&__inner {
+			margin-top: 24px;
+		}
+		&__list {
+			gap: 11px 27px;
+		}
+		&__item {
+			max-width: 410px;
+			grid-template-columns: 100px 1fr;
+			border-radius: 10px;
+			justify-self: end;
+			&:nth-child(2n) {
+				justify-self: start;
+			}
+		}
+		&__text {
+			padding: 13px 11px 13px 0;
+		}
+		&__text-rus {
+			font-size: 16px;
+		}
+		&__text-chi {
+			font-size: 16px;
+		}
+	}
+	.svg-features--delivery-speed-dims {
+		width: 61px;
+		height: 61px;
+	}
+	.svg-features--money-dims {
+		width: 70px;
+		height: 70px;
+	}
+	.svg-features--delivery-time-dims {
+		width: 61px;
+		height: 61px;
+	}
+	.svg-features--natural-seafood-dims {
+		width: 74px;
+		height: 74px;
+	}
+	// Menu=======================================================================
+	.section-menu {
+		&__inner {
+			margin-top: 42px;
+		}
+		&__title-container {
+			margin-right: -20px;
+			margin-left: -20px;
+			margin-bottom: 18px;
+			&:before {
+				top: 32px;
+				height: 2px;
+			}
+			&::after {
+				height: 116px;
+			}
+		}
+		&__title-rus {
+			font-size: 56px;
+			padding-right: 23px;
+			padding-left: 23px;
+		}
+		&__title-chi {
+			font-size: 40px;
+		}
+		&__card-list {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 17px 20px;
+			margin-bottom: 50px;
+			margin-top: 42px;
+		}
+		&__see-all-btn {
+			grid-template-columns: 4fr 1px 6fr;
+			margin-bottom: 70px;
+			max-width: 380px;
+		}
+	}
+	.menu-categories {
+		&__list {
+			padding: 6px;
+			border-radius: 31px 0 0 31px;
+			&::after {
+				background-image: linear-gradient(90deg, transparent 0%, #eeeeee 50%);
+				width: 120px;
+			}
+		}
+		&__item {
+			padding: 11px 22px;
+			border-radius: 25px;
+		}
+		&__text-rus {
+			font-size: 20px;
+		}
+		&__text-chi {
+			font-size: 20px;
+		}
+		&__menu-arrow-btn {
+			top: calc(50% - 17.5px);
+			right: 5px;
+		}
+	}
+	.dish-card {
+		&__img-container {
+			min-height: 236px;
+			min-width: 270px;
+		}
+	}
+	.svg-main--menu--arrow-dims {
+		width: 35px;
+		height: 35px;
+	}
+	// About===============================================================
+	.aboutUs {
+		&__title-container {
+			margin-right: -20px;
+			margin-left: -20px;
+			margin-bottom: 18px;
+			&:before {
+				top: 32px;
+				height: 2px;
+			}
+			&::after {
+				height: 116px;
+			}
+		}
+		&__slider-inside {
+			height: 955px;
+			margin-bottom: 10px;
+		}
+		&__booking-link {
+			top: 794px;
+		}
+		&__slider-outside {
+			height: 955px;
+			margin-bottom: 10px;
+			&-container {
+				margin-top: -1099px;
+			}
+		}
+		&__rus-container {
+			font-size: 18px;
+		}
+		&__chi-text {
+			font-size: 24px;
+		}
+		&__switcher-slider-block {
+			top: 49px;
+		}
+	}
+	.aboutUs__slider-inside .aboutUs__slide {
+		height: 955px;
+	}
+	.aboutUs__slider-outside .aboutUs__slide {
+		height: 955px;
+	}
+	.aboutUs__slider-inside-mini .slick-slide {
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+	.aboutUs__slider-inside .aboutUs__slider-text-block,
+	.aboutUs__slider-outside .aboutUs__slider-text-block {
+		text-align: center;
+		margin-top: 688px;
+		margin-left: 0;
+	}
+	.aboutUs__slider-inside .aboutUs__slider-text-main,
+	.aboutUs__slider-outside .aboutUs__slider-text-main {
+		font-size: 40px;
+		letter-spacing: 0.04em;
+	}
+	.aboutUs__slider-inside .aboutUs__slider-text-chi,
+	.aboutUs__slider-outside .aboutUs__slider-text-chi {
+		font-size: 40px;
+		letter-spacing: 0.02em;
+	}
+
+	// Reviews=============================================================
+	.reviews {
+		&__title-container {
+			margin-top: 560px;
+			margin-right: -20px;
+			margin-left: -20px;
+			margin-bottom: 18px;
+			&:before {
+				top: 32px;
+				height: 2px;
+			}
+			&::after {
+				height: 116px;
+			}
+		}
+	}
+	// Footer==============================================================
+
+	.footer {
+		&__inner {
+			padding: 37px 0 28px;
+		}
+
+		&__main-block {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, min-content);
+		}
+		&__logo-link {
+			grid-column: 1/2;
+			justify-self: start;
+		}
+		&__logo-img {
+			height: 102px;
+			width: 102px;
+		}
+		&__menu-list {
+			grid-column: 2/4;
+		}
+		&__contact-block {
+			grid-column: 1/4;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 6px 13px;
+		}
+		&__contact {
+			grid-row: 2/3;
+			grid-column: 2/4;
+			justify-content: start;
+		}
+		&__adress {
+			grid-column: 2/4;
+			grid-row: 1/2;
+			justify-content: start;
+		}
+		&__rating {
+			grid-column: 1/2;
+			justify-self: start;
+		}
+	}
+}

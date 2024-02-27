@@ -1,0 +1,36 @@
+// Mobile first
+@media (min-width: 900px) {
+	.section-menu {
+		&__card-list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	.footer {
+		&__secondary-block {
+			padding-top: 43px;
+			grid-template-columns: 1fr, 1fr, 1fr;
+		}
+		&__secondary-block-rules-link {
+			grid-row: 1/2;
+			grid-column: 1/2;
+			max-width: 160px;
+			text-align: left;
+			margin-left: 0;
+		}
+		&__secondary-block-payment {
+			width: 151px;
+			margin-right: 0;
+			grid-row: 1/2;
+			grid-column: 3 / 4;
+		}
+		&__secondary-block-copyright {
+			grid-row: 1/2;
+			grid-column: 2/3;
+		}
+	}
+}
+
+// Desktop first
+// @media (max-width: 900px) {
+
+// }

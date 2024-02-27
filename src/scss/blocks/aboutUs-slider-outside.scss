@@ -1,0 +1,78 @@
+.aboutUs {
+}
+.aboutUs__slider-outside {
+	height: 398px;
+	&-container {
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+margin-top: -636px;
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+position: relative;
+transition: all 0.5s;
+	}
+	margin-bottom: 104px;
+	& .aboutUs {
+		&__slide {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: 398px;
+			border-radius: 10px;
+		}
+		&__slider-text-block {
+			color: var(--color-text-light);
+			text-transform: uppercase;
+			margin-left: 20px;
+			margin-top: 334px;
+		}
+		&__slider-text-main {
+			@extend %font-Oranienbaum-400;
+			font-size: 24px;
+			letter-spacing: 1.44px;
+		}
+		&__slider-text-chi {
+			@extend %font-Microsoft-Jhenghei-400;
+			letter-spacing: 0.86px;
+			font-size: 20px;
+		}
+		&__slide-1 {
+			background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+				url(../img/main/about/fasad-lg.webp);
+		}
+		&__slide-2 {
+			background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+				url(../img/main/about/garden.jpg);
+		}
+		&__slide-3 {
+			background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
+				url(../img/main/about/parking.jpg);
+		}
+	}
+}
+.aboutUs__slider-outside-mini .slick-slide {
+	margin: 0 5px;
+}
+
+.aboutUs__slider-outside-mini {
+	margin-left: -5px;
+	margin-right: -5px;
+	& .aboutUs {
+		&__mini-slide {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 165px;
+			height: 130px;
+			border-radius: 10px;
+			gap: 5px;
+		}
+		&__mini-slide-1 {
+			background-image: url(../img/main/about/fasad-lg.webp);
+		}
+		&__mini-slide-2 {
+			background-image: url(../img/main/about/garden.jpg);
+		}
+		&__mini-slide-3 {
+			background-image: url(../img/main/about/parking.jpg);
+		}
+	}
+}

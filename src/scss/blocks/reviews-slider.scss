@@ -1,0 +1,71 @@
+.reviews {
+	& .slick-dots {
+		bottom: -22px;
+		& li {
+			& button {
+				display: none;
+			}
+			background-color: var(--color-stroke-dark);
+			margin-right: 4px;
+			margin-left: 4px;
+			width: 8px;
+			height: 8px;
+			border-radius: 5px;
+			&.slick-active {
+				background-color: var(--color-accent);
+				width: 45px;
+			}
+		}
+	}
+	&__slider {
+	}
+	&__slider-list {
+	}
+	&__slider-card {
+		border: 1px solid var(--color-stroke-medium);
+		border-radius: 10px;
+		padding: 33px 20px 28px;
+	}
+	&__slider-card-inner {
+	}
+	&__slider-card-text {
+		font-size: 14px;
+		margin-bottom: 17px;
+	}
+	&__slider-card-info {
+		align-items: center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: min-content 1fr;
+		row-gap: 17px;
+	}
+	&__slider-card-rating {
+		width: 136px;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+	&__slider-card-date {
+		justify-self: end;
+	}
+	&__slider-card-author {
+		display: flex;
+		align-items: center;
+		grid-column: 1/3;
+	}
+	&__slider-card-avatar {
+		width: 46px;
+		height: 46px;
+		border-radius: 50%;
+		margin-right: 16px;
+	}
+	&__slider-card-name {
+	}
+}
+.svg-main--rewievs--star-dims {
+	height: 24px;
+	width: 24px;
+}
+.svg-main--rewievs--star-w-o-fill-dims {
+	height: 24px;
+	width: 24px;
+}

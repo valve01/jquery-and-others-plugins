@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Raido.</title>
+	<title>Древний Китай</title>
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -14,59 +14,98 @@
 </head>
 
 <body class="body">
-	<div class="header-banner-container">
+	<header class="header">
+	
+			<div class="header__inner">
+				@@include('header-slider.html')
+				<div class="header__top">
+					<div class="header__point-info">
+						<button class="header__point-adress">
+							<img src="img/sprite.svg#footer--map" class="svg-footer--map-dims" alt="footer--map">
+							<span class="header__point-adress-text">ул. Верхние Поля, дв56с4, Москва</span>
+						</button>
 
-		<!-- <header class="header">
-			<div class="container header__container">
+						<div class="header__point-work-time">
+							<img src="img/sprite.svg#header--time" class="svg-header--time-dims" alt="header--time">
+							<span class="header__point-work-time-text">с 9:00-03:00</span>
+						</div>
+					</div>
 
-				<div class="header__inner">
-
-
-
-					<nav class="menu">
-						<ul class="menu-list">
-							<a class="menu-link" href="#">
-								<li class="menu-item menu-item--active">Home</li>
-							</a>
-							<a class="menu-link" href="#">
-								<li class="menu-item">About us</li>
-							</a>
-							<a class="menu-link" href="#">
-								<li class="menu-item">Discover</li>
-							</a>
-							<a class="menu-link" href="#">
-								<li class="menu-item">Blog</li>
-							</a>
-							<a class="menu-link" href="#">
-								<li class="menu-item">Journals</li>
-							</a>
-							<a class="menu-link" href="#">
-								<li class="menu-item">Galery</li>
-							</a>
-							<a class="menu-link" href="#">
-								<li class="menu-item">Contacts</li>
-							</a>
+					<nav class="navigation">
+						<button class="mobile-burger-btn"><img src="img/sprite.svg#icons--burger"
+								class="svg-icons--burger-dims" style="width: 37px; " alt="icons--burger"></button>
+						<ul class="menu">
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									<span class="menu__text-rus">Меню</span>
+									<span class="menu__text-chi">菜单</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									<span class="menu__text-rus">О ресторане</span>
+									<span class="menu__text-chi">关于该餐厅 </span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									<span class="menu__text-rus">Доставка</span>
+									<span class="menu__text-chi">送货 </span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									<span class="menu__text-rus">Информация</span>
+									<span class="menu__text-chi">信息</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									<span class="menu__text-rus">Контакты</span>
+									<span class="menu__text-chi">联系我们</span>
+								</a>
+							</li>
 						</ul>
 					</nav>
 
-
-
-
-
-
-
-
-
-					<nav class="mobile-burger">
-						<button class="mobile-burger__btn"></button>
-					</nav>
+					<div class="header__user">
+						<div class="header__phone">
+							<img src="img/sprite.svg#header--phone" class="svg-header--phone-dims" alt="header--phone">
+							<span class="header__phone-text">+7 954 123-85-07</span>
+						</div>
+						<a href="#" class="header__user-cab-link header__user-tools">
+							<img src="img/sprite.svg#header--user" class="svg-header--user-dims" alt="header--user">
+						</a>
+						<a href="#" class="header__cart-link header__user-tools">
+							<img src="img/sprite.svg#main--menu--cart" class="svg-main--menu--cart-dims"
+								alt="main--menu--cart">
+							<span class="header__cart-items-qauntity">2</span>
+						</a>
+					</div>
 
 				</div>
-			</div> -->
 
-		<!-- </header> -->
+				<div class="logo">
+					<img src="img/logo.png" class="logo-img" alt="header--logo">
+				</div>
 
+				<div class="header__booking-block">
+					<div class="header__booking booking">
+						<a href="#" class="booking__link header__booking-link">
+							<span class="header__booking-text-rus header__booking-text">Забронировать стол</span>
+							<div class="header__booking-separator"></div>
+							<span class="header__booking-text-chi header__booking-text">预订座位</span>
+						</a>
+					</div>
+					<div class="header__booking delivery">
+						<a href="#" class="delivery__link header__booking-link">
+							<span class="header__booking-text-rus header__booking-text">ДОСТАВКА ЕДЫ НА ДОМ</span>
+							<div class="header__booking-separator"></div>
+							<span class="header__booking-text-chi header__booking-text">食品配送</span>
+						</a>
+					</div>
+				</div>
 
-
-	</div>
-	<!-- @@include('../mobile-nav.html') -->
+			</div>
+		
+	</header>

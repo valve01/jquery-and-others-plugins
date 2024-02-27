@@ -1,21 +1,171 @@
-
-
 .header {
-	background-color: rgb(62, 184, 184);
-	border-bottom: #93a0a7 solid 1px;
-	backdrop-filter: blur(10px) brightness(75%);
-	&__container {
-		padding: 28px 0;
+	&__inner {
+		position: relative;
+	}
+	&__top {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		padding: 20px 10px 16px;
 		display: flex;
 		justify-content: space-between;
-	}
-	&__inner {
-		display: flex;
-		justify-content: end;
 		align-items: center;
-		text-transform: capitalize;
 	}
-	&__search-link {
+	&__point-info {
+		color: var(--color-text-light);
+		display: none;
+		@extend %font-Gilroy-500;
+		font-size: 16px;
+	}
+	&__point-adress {
+		color: var(--color-text-light);
+		display: none;
+	}
+	&__point-adress-text {
+	}
+	&__point-work-time {
+	}
+	&__point-work-time-text {
+	}
+	&__user {
+		display: flex;
+	}
+	&__phone {
+		display: none;
+	}
+	&__phone-text {
+		@extend %font-Gilroy-500;
+	}
+	&__user-tools {
+		position: relative;
+		right: 10px;
+		height: 36px;
+		width: 36px;
+		border-radius: 50%;
+		background-color: var(--color-accent);
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
+	&__user-cab-link {
+		margin-right: 8px;
+	}
+	&__cart-link {
+		
+	}
+	&__cart-items-qauntity {
+		text-align: center;
+		padding-top: 1px;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		top: -3px;
+		right: -6px;
+		@extend %font-Gilroy-500;
+		font-size: 11px;
+		background-color: var(--color-text-light);
+		border-radius: 50%;
+	}
+	&__booking-block {
+		display: flex;
+		flex-direction: column;
+		row-gap: 7px;
+		position: absolute;
+		top: 316px;
+		left: calc(50% - 111px);
+	}
+	&__booking {
+		color: var(--color-text-light);
+	}
+	&__booking-link {
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		width: 222px;
+		height: 53px;
+		background-color: var(--color-accent);
+		border-radius: 7px;
+	}
+	&__booking-text-rus {
+		@extend %font-Gilroy-500;
+		font-size: 11px;
+		text-align: right;
+		margin: 13px 17px;
+	}
+	&__booking-text {
+	}
+	&__booking-separator {
+		height: 45px;
+		width: 1px;
+		background-color: var(--color-btn-separator);
+	}
+	&__booking-text-chi {
+		@extend %font-Microsoft-Jhenghei-700;
+		font-size: 14px;
+		padding: 17px;
+		min-width: 90px;
 	}
 }
 
+.booking {
+	&__link {
+	}
+}
+.delivery {
+	&__link {
+		& > .header__booking-text-rus {
+			order: 3;
+			text-align: left;
+			max-width: 98px;
+		}
+		& > .header__booking-separator {
+			order: 2;
+		}
+	}
+}
+
+.mobile-burger-btn {
+	
+}
+.menu {
+	display: none;
+	&__item {
+		&:nth-child(4)>.menu__link>.menu__text-rus{
+			display: flex;
+			align-items: center;
+			column-gap: 7px;
+			&::after{
+				content: '';
+				display: block;
+				width: 8px;
+				height: 6px;
+				background-color: #fff;
+				clip-path: polygon(0 0, 100% 0, 50% 100% )
+
+			}
+		}
+	}
+	&__link {
+// position: relative;
+	}
+	&__text-rus {
+		@extend %font-Gilroy-700;
+	}
+	&__text-chi {
+		@extend %font-Microsoft-Jhenghei-700;
+	}
+}
+.logo {
+	width: 102px;
+	height: 102px;
+	position: absolute;
+	top: 20px;
+	left: calc(50% - 51px);
+}
+.svg-header--user-dims {
+	width: 16px;
+}
+.svg-main--menu--cart-dims {
+	width: 18px;
+}

@@ -1,4 +1,39 @@
-// @font-face {
-// 	font-family: 'Muli', Arial, sans-serif;
-// 	src: url('../fonts/Muli-Bold.ttf');
-// }
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-lightitalic.woff2') format('woff2'),
+		url('../fonts/gilroy-lightitalic.woff') format('woff'),
+		url('../fonts/gilroy-lightitalic.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-regular.woff2') format('woff2'),
+		url('../fonts/gilroy-regular.woff') format('woff'), url('../fonts/gilroy-regular.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-medium.woff2') format('woff2'),
+		url('../fonts/gilroy-medium.woff') format('woff'), url('../fonts/gilroy-medium.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-bold.woff2') format('woff2'),
+		url('../fonts/gilroy-bold.woff') format('woff'), url('../fonts/gilroy-bold.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Microsoft Jhenghei';
+	src: url('../fonts/microsoft-jhenghei-regular.woff2') format('woff2'),
+		url('../fonts/microsoft-jhenghei-regular.woff') format('woff'),
+		url('../fonts/microsoft-jhenghei-regular.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Microsoft Jhenghei';
+	src: url('../fonts/microsoft-jhenghei-bold.woff2') format('woff2'),
+		url('../fonts/microsoft-jhenghei-bold.woff') format('woff'),
+		url('../fonts/microsoft-jhenghei-bold.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Oranienbaum';
+	src: url('../fonts/Oranienbaum-Regular.woff2') format('woff2'),
+		url('../fonts/Oranienbaum-Regular.woff') format('woff'),
+		url('../fonts/Oranienbaum-Regular.ttf') format('ttf');
+}

@@ -1,3 +1,4 @@
+
 /* Fonts */
 
 @import './base/fonts';
@@ -25,23 +26,28 @@
 /*@import './base/1024';*/
 /*@import './base/1000';*/
 /*@import './base/768';*/
-/* @import './base/640';*/
+/*@import './base/640';*/
+/*@import './base/600';*/
 /*@import './base/480';*/
 /*@import './base/360';*/
-/* @import './base/320';*/
+/*@import './base/320';*/
 
 /*Mobile first*/
-/* @import './base/320';*/
-/* @import './base/360';*/
-/* @import './base/480';*/
-/* @import './base/640';*/
-/* @import './base/768';*/
-/* @import './base/1000';*/
-/* @import './base/1024';*/
-/* @import './base/1280';*/
-/* @import './base/1440';*/
-/* @import './base/1600';*/
-/* @import './base/1920';*/
+/*@import './base/320';*/
+/*@import './base/360';*/
+/*@import './base/480';*/
+@import './base/600';
+/*@import './base/640';*/
+/*@import './base/768';*/
+@import './base/900';
+/*@import './base/1000';*/
+/*@import './base/1024';*/
+@import './base/1200';
+/*@import './base/1280';*/
+/*@import './base/1440';*/
+@import './base/1500';
+
+@import './base/1920';
 
 /*// .box {
 // 	background-image: url("large-balloons.jpg");

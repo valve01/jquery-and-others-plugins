@@ -113,15 +113,21 @@ function fontsDev() {
 	return (
 		src('./src/fonts/**/*')
 			.pipe(changed('./build/fonts'))
-			.pipe(
-				fonter({
-					formats: ['woff', 'ttf'], // любые форматы конвертирует в woof и ttf
-				}),
-			)
+
+			// Времменно закомментил для ускорения билда
+			// .pipe(
+			// 	fonter({
+			// 		formats: ['woff', 'ttf'], // любые форматы конвертирует в woof и ttf
+			// 	}),
+			// )
+
 			//Второй раз обращаемся только к ttf файлам// В шрифтах мы не делаем 		.pipe(dest('./build/fonts'))		 перед тем как обратиться к только что сконвертированному ttf
-			.pipe(src('./build/fonts/**/*.ttf'))
-			.pipe(changed('./build/fonts'))
-			.pipe(ttf2woff2())
+
+			// Времменно закомментил для ускорения билда
+			// .pipe(src('./build/fonts/**/*.ttf'))
+			// .pipe(changed('./build/fonts'))
+			// .pipe(ttf2woff2())
+
 			.pipe(dest('./build/fonts'))
 	);
 }

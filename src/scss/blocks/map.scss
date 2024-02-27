@@ -1,0 +1,42 @@
+.map {
+	&__inner {
+		position: relative;
+	}
+	&__ya-map-box {
+	}
+	&__switcher {
+		left: 0;
+		top: 10px;
+		position: absolute;
+	}
+	&__switcher-inner {
+		display: grid;
+		height: 32px;
+		width: 200px;
+		background-color: var(--color-bg);
+		border-radius: 8px;
+		text-transform: uppercase;
+		font-size: 10px;
+		letter-spacing: 0.18px;
+		box-shadow: 0px 2px 6px #00000036;
+	}
+	&__switcher-adress {
+		grid-column: 1/2;
+		border-radius: 8px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__switcher--active {
+		background-color: var(--color-accent);
+		color: var(--color-text-light);
+	}
+	&__switcher-build-route {
+		grid-column: 2/ 3;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
