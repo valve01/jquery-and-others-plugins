@@ -1,7 +1,7 @@
 const config = {
 	mode: 'production',
 	entry: {
-		zeu: './src/js/jQueryPlugins/zeu.min.js',
+		// zeu: './src/js/jQueryPlugins/zeu.min.js',
 		cornerPopup: './src/js/jQueryPlugins/corner-popup.min.js',
 		// uPlot: './src/js/jQueryPlugins/uPlot.iife.min.js',
 		
