@@ -7,8 +7,11 @@ import './modules/about-slider-inside';
 import './modules/about-slider-outside';
 import './modules/reviews-slider';
 import './modules/jQueryModules/popup';
-import './modules/jQueryModules/fullcalendar';
-import './modules/jQueryModules/vizzu';
+// import './modules/jQueryModules/fullcalendar';
+// import './modules/jQueryModules/vizzu';
+// import './modules/jQueryModules/flowy';
+// import './modules/jQueryModules/uPlot';
+// import './modules/jQueryModules/g2.js';
 
 // mobileNav();
 aboutSliderSwitcher()

@@ -40,6 +40,7 @@
 		]
 	},
 	"dependencies": {
+		"@antv/g2": "^5.1.15",
 		"air-datepicker": "^3.4.0",
 		"gulp-gh-pages": "^0.5.4",
 		"jquery": "^3.7.1",
