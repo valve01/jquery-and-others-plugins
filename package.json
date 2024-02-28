@@ -43,7 +43,8 @@
 		"air-datepicker": "^3.4.0",
 		"gulp-gh-pages": "^0.5.4",
 		"jquery": "^3.7.1",
-		"slick-slider": "^1.8.2"
+		"slick-slider": "^1.8.2",
+		"vizzu": "^0.9.3"
 	},
 	"browserslist": [
 		"last 10 version"
