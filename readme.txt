@@ -77,3 +77,62 @@ chart.animate({
     x: 'Baz',
     geometry: 'circle'
 });
+
+====================================================================================================================
+
+2. Через <script> </script> и скачанный дистрибутив. На примере zeu.
+
+- Скачиваем файл плагина zeu.min.js и помещаем его в наш проект. У нас он лежит src/js/jQueryPlugins/zeu.min.js
+
+- Настраиваем gulp (пример для dev.js) так, чтобы он просто брал файлы плагинов и копировал их в buil/js, а не пропускал их через webpack
+
+
+function jsDev() {
+	return (
+		src('./src/js/*.js')
+			.pipe(changed('./build/js'))
+			.pipe(plumber(plumberConfig('JS')))
+			// .pipe(babel())//выключен в dev режиме
+			.pipe(webpack(require('./../webpack.config.js')))
+			.pipe(dest('./build/js/'))
+
+			.pipe(src('./src/js/**/*.min.js'))
+			.pipe(changed('./build/js'))
+			.pipe(plumber(plumberConfig('JS')))
+			.pipe(dest('./build/js/'))
+	);
+}
+
+- И просто подключаем их в HTML как обычно перед </body>
+
+<script src="js/jQueryPlugins/zeu.min.js"></script>
+
+- Дальше создаем в разметке (HTML) элемент куда поместим содержимое плагина
+
+<canvas id="text-meter" width="200" height="100"></canvas>
+
+- Используем плагин в JS согласно документации
+
+  // Create a Zeu TextMeter.
+  var textMeter = new zeu.TextMeter('text-meter');
+  // Update display and percentage value.
+  textMeter.displayValue = 'ZEU';
+  textMeter.value = 50;
+
+  ==================================================================================================
+3. Через CDN 
+- Просто подключаем файлы плагина в HTML как обычно перед </body>, указав путь к CDN серверу. 
+
+<script src="https://cdn.jsdelivr.net/npm/zeu"></script>
+
+- Дальше создаем в разметке (HTML) элемент куда поместим содержимое плагина
+
+<canvas id="text-meter" width="200" height="100"></canvas>
+
+- Используем плагин в JS согласно документации
+
+  // Create a Zeu TextMeter.
+  var textMeter = new zeu.TextMeter('text-meter');
+  // Update display and percentage value.
+  textMeter.displayValue = 'ZEU';
+  textMeter.value = 50;

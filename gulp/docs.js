@@ -102,7 +102,7 @@ function scssDocs() {
 }
 
 // ========================================================== Images ==================================================================
-// Временно отключаю, чтобы долго не ждать сборку, если нужно просто проверить работу на сервере 
+// Временно отключаю, чтобы долго не ждать сборку, если нужно просто проверить работу на сервере
 function imagesDocs() {
 	return (
 		src('./src/img/**/*.{png,jpg,jpeg}')
@@ -174,12 +174,17 @@ function copyFilesDocs() {
 // ============================================================== JS ===================================================================
 
 function jsDocs() {
-	return src('./js/*.js')
+	return src('./src/js/*.js')
 		.pipe(changed('./docs/js'))
 		.pipe(plumber(plumberConfig('JS')))
 		.pipe(babel())
 		.pipe(webpack(require('./../webpack.config.js')))
-		.pipe(dest('./docs/js'));
+		.pipe(dest('./docs/js'))
+
+		.pipe(src('./src/js/**/*.min.js'))
+		.pipe(changed('./docs/js'))
+		.pipe(plumber(plumberConfig('JS')))
+		.pipe(dest('./docs/js'))
 }
 
 // =========================================================== Server ============================================================

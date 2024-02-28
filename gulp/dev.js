@@ -142,12 +142,17 @@ function copyFilesDev() {
 
 function jsDev() {
 	return (
-		src('./js/*.js')
+		src('./src/js/*.js')
 			.pipe(changed('./build/js'))
 			.pipe(plumber(plumberConfig('JS')))
 			// .pipe(babel())//выключен в dev режиме
 			.pipe(webpack(require('./../webpack.config.js')))
-			.pipe(dest('./build/js'))
+			.pipe(dest('./build/js/'))
+
+			.pipe(src('./src/js/**/*.min.js'))
+			.pipe(changed('./build/js'))
+			.pipe(plumber(plumberConfig('JS')))
+			.pipe(dest('./build/js/'))
 	);
 }
 
