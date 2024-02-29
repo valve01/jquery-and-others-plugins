@@ -45,7 +45,8 @@
 		"gulp-gh-pages": "^0.5.4",
 		"jquery": "^3.7.1",
 		"slick-slider": "^1.8.2",
-		"vizzu": "^0.9.3"
+		"vizzu": "^0.9.3",
+		"zeu": "^1.3.2"
 	},
 	"browserslist": [
 		"last 10 version"

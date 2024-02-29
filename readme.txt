@@ -37,9 +37,24 @@ npm i jquery
 
 import $ from 'jquery';
 
+
 - Далее добавить код самого плагина. 
 
  import Vizzu from 'vizzu';
+
+ - Иногда приходится делать такой импорт 
+
+ import * as zeu from 'zeu'
+
+ - Чтобы воспользоваться всем кодом плагина как классом
+
+ (
+// Create a Zeu TextMeter.
+var textMeter = new zeu.TextMeter('text-meter');
+// Update display and percentage value.
+textMeter.displayValue = 'ZEU';
+textMeter.value = 80;
+)
 
  -Не забываем подключить этот файл в основной JS файл (в index.js например. Вот так import './modules/jQueryModules/vizzu';)
  - Мы записываем его в переменную Vizzu, т.к. будем вызывать этот код с ее помощью. Но может быть что код нужно просто добавить, не записывая его в переменные. Наример как slick-slider.

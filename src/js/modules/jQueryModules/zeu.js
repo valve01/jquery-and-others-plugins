@@ -1,5 +1,4 @@
-
-
+import * as zeu from 'zeu'
 
 // Create a Zeu TextMeter.
 var textMeter = new zeu.TextMeter('text-meter');
