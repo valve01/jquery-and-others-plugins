@@ -24,6 +24,10 @@ npm i jquery
 
 - так файлы плагина скачаются в node_modules. Надо определить название папки в node_modules в которую скачался плагин (он может отличаться от того что мы писали в команде npm install vizzu). В нашем случае папка называется vizzu.
 - Если в плагине есть css файлы - кладем их в папку src/scss/libs. (В общем их нужно тоже подключить к проекту в самом начале css файла)
+- Но иногда в документации плагина просят импортировать стили прямо в JS. ПРЯМО В JS КАРЛ! в ТОТ ЖЕ ФАЙЛ ГДЕ БУДЕМ инициализировать плагин.
+
+import '@toast-ui/chart/dist/toastui-chart.min.css';
+
 - Создаем в (HTML) разметке элемент, который будет содержать то, что мы хотим отобразить с помощью плагина:
 
 <html>
@@ -41,6 +45,10 @@ import $ from 'jquery';
 - Далее добавить код самого плагина. 
 
  import Vizzu from 'vizzu';
+
+- Или по-старинке - через require. (как у tui)
+
+const Chart = require('@toast-ui/chart');
 
  - Иногда приходится делать такой импорт 
 
@@ -139,15 +147,34 @@ function jsDev() {
 
   ==================================================================================================
 3. Через CDN 
-- Просто подключаем файлы плагина в HTML как обычно перед </body>, указав путь к CDN серверу. 
+- Просто подключаем файлы плагина в HTML как обычно перед </body>, (можно иногда и внутри <head>) указав путь к CDN серверу. 
 
 <script src="https://cdn.jsdelivr.net/npm/zeu"></script>
+
 
 - Дальше создаем в разметке (HTML) элемент куда поместим содержимое плагина
 
 <canvas id="text-meter" width="200" height="100"></canvas>
 
-- Используем плагин в JS согласно документации
+-Иногда может понадобится Чтобы получить доступ к функции конструктора, импортировать модуль, 
+
+/* namespace */
+const Chart = toastui.Chart;
+
+как для 
+/* CommonJS in Node.js */ 
+(const Chart = require('@toast-ui/chart');)
+ или 
+ /* ES6 in Node.js */ 
+ (
+import Chart from '@toast-ui/chart';
+import { BarChart } from '@toast-ui/chart';
+)
+
+/* namespace */
+const Chart = toastui.Chart;
+
+- Далее Используем плагин в JS согласно документации
 
   // Create a Zeu TextMeter.
   var textMeter = new zeu.TextMeter('text-meter');
