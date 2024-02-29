@@ -45,8 +45,11 @@ import $ from 'jquery';
  - Иногда приходится делать такой импорт 
 
  import * as zeu from 'zeu'
+-или так
+import ApexCharts from 'apexcharts'
 
  - Чтобы воспользоваться всем кодом плагина как классом
+
 
  (
 // Create a Zeu TextMeter.
