@@ -52,7 +52,6 @@
 		margin-right: 8px;
 	}
 	&__cart-link {
-		
 	}
 	&__cart-items-qauntity {
 		text-align: center;
@@ -94,6 +93,12 @@
 		margin: 13px 17px;
 	}
 	&__booking-text {
+		filter: blur(2px);
+	
+		transition: filter 0.5s  ease;
+		&:hover{
+			filter: blur(0);
+		}
 	}
 	&__booking-separator {
 		height: 45px;
@@ -126,28 +131,26 @@
 }
 
 .mobile-burger-btn {
-	
 }
 .menu {
 	display: none;
 	&__item {
-		&:nth-child(4)>.menu__link>.menu__text-rus{
+		&:nth-child(4) > .menu__link > .menu__text-rus {
 			display: flex;
 			align-items: center;
 			column-gap: 7px;
-			&::after{
+			&::after {
 				content: '';
 				display: block;
 				width: 8px;
 				height: 6px;
 				background-color: #fff;
-				clip-path: polygon(0 0, 100% 0, 50% 100% )
-
+				clip-path: polygon(0 0, 100% 0, 50% 100%);
 			}
 		}
 	}
 	&__link {
-// position: relative;
+		// position: relative;
 	}
 	&__text-rus {
 		@extend %font-Gilroy-700;
@@ -157,11 +160,22 @@
 	}
 }
 .logo {
+	// position: absolute;
+	// left: calc(50% - 51px);
+	width: 102px;
+	height: 102px;
+	transition: 1s transform ease;
+	&:hover {
+		transform: rotateX(45deg);
+	}
+}
+.logo-wrapper {
 	width: 102px;
 	height: 102px;
 	position: absolute;
-	top: 20px;
+	top: 0px;
 	left: calc(50% - 51px);
+	perspective: 500px;
 }
 .svg-header--user-dims {
 	width: 16px;
