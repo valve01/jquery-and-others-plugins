@@ -6,7 +6,7 @@ import './modules/header-slider';
 import './modules/about-slider-inside';
 import './modules/about-slider-outside';
 import './modules/reviews-slider';
-import './modules/jQueryModules/popup';
+// import './modules/jQueryModules/popup';
 // import './modules/jQueryModules/fullcalendar';
 // import './modules/jQueryModules/vizzu';
 // import './modules/jQueryModules/flowy';
