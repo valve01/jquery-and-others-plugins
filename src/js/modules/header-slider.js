@@ -10,7 +10,7 @@
 
 // prevArrow:'<button type="button" class="slick-prev"><img src="../img/sprite.svg#icons--prev-btn" alt="prev arrow"></button>',
 
-// import $ from 'jquery';
+import $ from 'jquery';
 import 'slick-slider';
 
 $('.header__slider').slick({

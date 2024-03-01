@@ -22,10 +22,10 @@ const config = {
 	},
 	plugins:[
 		// Подключаем jQuery, установленный через npm. Теперь не нужно будет импортировать jQuery в файлы где он будет использоваться. Он уже как бы там будет.
-		new webpack.ProvidePlugin({
-			$: 'jquery',
-			jQuery: 'jquery',
-		  })
+		// new webpack.ProvidePlugin({
+		// 	$: 'jquery',
+		// 	jQuery: 'jquery',
+		//   })
 	]
 };
 
