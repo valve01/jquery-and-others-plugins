@@ -17,8 +17,6 @@
 		align-items: center;
 		justify-items: center;
 		width: 100%;
-		
-
 	}
 	&__text {
 		padding: 10px 9px 10px 0;
@@ -36,10 +34,8 @@
 	&__delivery-speed {
 	}
 	&__money {
-	
 	}
 	&__delivery-time {
-
 	}
 	&__natural-seafood {
 	}
@@ -60,4 +56,21 @@
 .svg-features--natural-seafood-dims {
 	width: 45px;
 	height: 45px;
+}
+
+
+.svg-anim-line {
+	background-color: blue;
+	path {
+		stroke-width: 10px;
+		stroke: #fff;
+		stroke-dashoffset: 18000;
+		stroke-dasharray: 18000;
+		animation: svgAnim 7s linear forwards 2s;
+	}
+	@keyframes svgAnim {
+		100%{
+			stroke-dashoffset: 0;
+		}
+	}
 }
