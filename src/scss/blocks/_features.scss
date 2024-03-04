@@ -58,19 +58,32 @@
 	height: 45px;
 }
 
+// Анимация рисования контура svg-элемента
+
+// Принцип работы анимации:
 
 .svg-anim-line {
 	background-color: blue;
 	path {
 		stroke-width: 10px;
 		stroke: #fff;
-		stroke-dashoffset: 18000;
+
+		// Атрибут определяющий вид пунктирной линии, используемый для рисования контура svg-элемента
 		stroke-dasharray: 18000;
-		animation: svgAnim 7s linear forwards 2s;
+		// stroke-dasharray: 5000 400 5000 200 ;
+
+		// Атрибут, определяет сдвиг массива dash-array относительно начального положения.
+		stroke-dashoffset:18000;
+
+		animation: svgAnim 20s linear infinite 2s;
 	}
 	@keyframes svgAnim {
 		100%{
+
+			// Чтобы анимация от начала до конца работала, тут должен быть 0
 			stroke-dashoffset: 0;
+			// Так анимация закончится, пройдя только 300пунктов
+			stroke-dashoffset: 15000;
 		}
 	}
 }
