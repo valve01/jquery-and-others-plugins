@@ -17,6 +17,8 @@ import './modules/reviews-slider';
 // import './modules/jQueryModules/gio';
 // import './modules/jQueryModules/tui';
 // import './modules/jQueryModules/datepicker';
+import './modules/svg-anim';
+
 
 
 

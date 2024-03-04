@@ -75,11 +75,11 @@
 		stroke: #fff;
 
 		// Атрибут определяющий вид пунктирной линии, используемый для рисования контура svg-элемента
-		stroke-dasharray: 18000;
+		stroke-dasharray: 17826;
 		// stroke-dasharray: 10000 400  5000 200;
 
 		// Атрибут, определяет сдвиг массива dash-array относительно начального положения.
-		stroke-dashoffset:9000;
+		stroke-dashoffset:17826;
 
 		animation: svgAnim 20s linear infinite 2s;
 	}
